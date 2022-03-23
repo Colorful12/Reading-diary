@@ -6,6 +6,7 @@ body {
   background-color: #e9e279;
 }
 
+
 /* header
 ------------------------------ */
 #header {
@@ -42,4 +43,30 @@ body {
 
 #header ul li:last-child {
   margin-right: 0;
+}
+
+
+/* footer
+------------------------------ */
+
+#footer {
+  width: 100%; 
+  background-color: #fff;
+}
+
+#footer p{
+  width: 100%;
+  margin: auto;
+}
+
+/* ユーザー登録フォーム
+------------------------------ */
+.content {
+    position: relative;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 5px;
 }
