@@ -8,6 +8,15 @@ try {
     password TEXT NOT NULL
     );";
     $pdo -> query($sql);
+
+    $sql ="CREATE TABLE IF NOT EXISTS postdb(
+        num INT UNSIGNED  NOT NULL,
+        title VARCHAR(32) NOT NULL,
+        img LONGBLOB,
+        ext varchar(10),
+        comment TEXT NOT NULL
+        );";
+        $pdo -> query($sql);
 }   catch (PDOException $e) {
     echo "データベース接続エラー　：".$e->getMessage();
 }
